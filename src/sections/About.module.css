@@ -1,11 +1,40 @@
 .grid {
   display: grid;
-  grid-template-columns: 1.7fr 1fr;
-  gap: 32px;
+  grid-template-columns: 1fr 1.6fr;
+  grid-template-areas:
+    "photo bio"
+    "credentials bio";
+  grid-template-rows: auto 1fr;
+  gap: 36px 40px;
   align-items: start;
 }
 
+.photoWrap {
+  grid-area: photo;
+  position: relative;
+}
+
+.photoFrame {
+  padding: 12px;
+}
+
+.photo {
+  width: 100%;
+  height: auto;
+  border-radius: 34px 24px 40px 28px / 26px 38px 24px 34px;
+}
+
+.cornerStar {
+  position: absolute;
+  top: -22px;
+  right: -14px;
+  width: 64px;
+  height: auto;
+  transform: rotate(12deg);
+}
+
 .bio {
+  grid-area: bio;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -25,6 +54,7 @@
 }
 
 .credentials {
+  grid-area: credentials;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -37,5 +67,15 @@
 @media (max-width: 760px) {
   .grid {
     grid-template-columns: 1fr;
+    grid-template-areas:
+      "photo"
+      "bio"
+      "credentials";
+    grid-template-rows: auto;
+  }
+
+  .photoWrap {
+    max-width: 320px;
+    justify-self: center;
   }
 }

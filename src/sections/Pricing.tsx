@@ -1,6 +1,7 @@
 import { Block, type BlockShape } from "../components/Block";
 import { Section } from "../components/Section";
 import type { StarPlacement } from "../components/Star";
+import { LISS_URL } from "../content/links";
 import {
   costsFinePrint,
   lissFunding,
@@ -93,6 +94,10 @@ export function Pricing() {
       <Block color="green" filled shape={0} tilt={-0.8} className={styles.stack}>
         <h3 className={styles.displayHeading}>{lissFunding.heading}</h3>
         <p className={styles.strong}>{lissFunding.body}</p>
+        <a className={styles.link} href={LISS_URL} target="_blank" rel="noopener noreferrer">
+          {lissFunding.linkLabel}
+          <span className="visually-hidden"> (opens in a new tab)</span>
+        </a>
       </Block>
     </Section>
   );

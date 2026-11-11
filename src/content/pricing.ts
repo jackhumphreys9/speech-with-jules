@@ -96,4 +96,5 @@ export const lissFunding = {
     "I recommend all of my families go ahead and apply for LISS funding for each of their " +
     "children for next year! This grant offers between $1,000-2,000 for families to put toward " +
     "therapy costs and home materials (sensory equipment, trampolines, AAC devices).",
+  linkLabel: "Learn more about LISS funding (Maryland Department of Health)",
 };

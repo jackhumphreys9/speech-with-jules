@@ -130,6 +130,11 @@
   font-weight: 700;
 }
 
+.link {
+  align-self: flex-start;
+  font-weight: 800;
+}
+
 @media (max-width: 960px) {
   .tiers {
     grid-template-columns: repeat(3, 1fr);

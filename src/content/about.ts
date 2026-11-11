@@ -2,6 +2,8 @@
 
 export const about = {
   greeting: "Hi! I'm Jules!",
+  photoAlt:
+    "Jules smiling, sitting by a window in a pink corduroy shirt and glasses, holding a fuzzy blue puppet",
   bio:
     "I've been a pediatric speech therapist in private practice since 2023. I have specialized " +
     "experience/training in gestalt language processing, complex communication needs, AAC, and " +
