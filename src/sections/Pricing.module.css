@@ -74,20 +74,51 @@
 .cost {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
+  gap: 10px;
 }
 
-.cost h4 {
-  font-size: 1.2rem;
+.costHeader {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px 16px;
+}
+
+.costName {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--darkgreen);
 }
 
 .costPrice {
+  flex: none;
   padding: 2px 14px;
   font-family: var(--font-display);
   font-size: 1.5rem;
   background: var(--star);
   border-radius: 14px 20px 12px 18px / 18px 12px 20px 14px;
+  transform: rotate(2deg);
+}
+
+.costDescription {
+  font-weight: 600;
+}
+
+.costNote {
+  margin-top: auto;
+  padding-top: 10px;
+  border-top: 3px dashed var(--block-color);
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+
+@media (max-width: 480px) {
+  .costHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .finePrint {

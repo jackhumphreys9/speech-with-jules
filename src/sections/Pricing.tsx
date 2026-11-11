@@ -72,11 +72,12 @@ export function Pricing() {
               shape={SHAPES[(index + 2) % SHAPES.length]}
               className={styles.cost}
             >
-              <h4>{cost.name}</h4>
-              <span className={styles.costPrice}>{cost.price}</span>
-              {cost.details.map((detail) => (
-                <p key={detail}>{detail}</p>
-              ))}
+              <div className={styles.costHeader}>
+                <h4 className={styles.costName}>{cost.name}</h4>
+                <span className={styles.costPrice}>{cost.price}</span>
+              </div>
+              <p className={styles.costDescription}>{cost.description}</p>
+              {cost.note && <p className={styles.costNote}>{cost.note}</p>}
             </Block>
           ))}
         </ul>

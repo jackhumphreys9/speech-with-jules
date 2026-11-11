@@ -37,7 +37,10 @@ export const tiers: Tier[] = [
 export interface OtherCost {
   name: string;
   price: string;
-  details: string[];
+  /** What the service includes. */
+  description: string;
+  /** Payment terms, shown set apart at the bottom of the card. */
+  note?: string;
 }
 
 export const otherCostsHeading = "Other costs";
@@ -46,24 +49,26 @@ export const otherCosts: OtherCost[] = [
   {
     name: "Speech and Language Evaluation",
     price: "$250-600",
-    details: ["2-hour session, written report", "pay what you can, honor system"],
+    description: "2-hour session, written report",
+    note: "Pay what you can, honor system",
   },
   {
     name: "Evaluation follow-up call",
     price: "$55",
-    details: ["30-minute plan of care review, virtual", "flat rate"],
+    description: "30-minute plan of care review, virtual",
+    note: "Flat rate",
   },
   {
     name: "IEP consult/review",
     price: "$150",
-    details: [
-      "includes written notes, recommendations, and option to add-on attendance at IEP meeting for $75",
-    ],
+    description:
+      "Includes written notes, recommendations, and option to add-on attendance at IEP meeting for $75",
   },
   {
     name: "Groups",
     price: "$25/kid drop-in",
-    details: ["$150/kid if paid all at once for the month", "no refunds if you cancel though"],
+    description: "$150/kid if paid all at once for the month",
+    note: "No refunds if you cancel though",
   },
 ];
 
