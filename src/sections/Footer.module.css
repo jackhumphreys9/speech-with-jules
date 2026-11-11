@@ -1,0 +1,15 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 28px var(--gutter) 36px;
+  border-top: 4px solid var(--darkgreen);
+  font-weight: 700;
+  color: var(--darkgreen);
+}
+
+.star {
+  width: 22px;
+  height: auto;
+}

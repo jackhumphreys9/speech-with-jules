@@ -1,0 +1,21 @@
+.section {
+  position: relative;
+  padding: 72px var(--gutter);
+  overflow-x: clip;
+}
+
+.inner {
+  position: relative;
+  z-index: 1;
+  max-width: var(--content-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: 52px var(--gutter);
+  }
+}

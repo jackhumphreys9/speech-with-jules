@@ -1,0 +1,9 @@
+/* Display-size text: red and purple fills meet WCAG AA for large text only, so never shrink this. */
+.title {
+  align-self: flex-start;
+  padding: 10px 30px 6px;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(2.25rem, 5vw, 3rem);
+  letter-spacing: 0.02em;
+}

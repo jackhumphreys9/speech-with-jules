@@ -1,0 +1,22 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 44px 30px;
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.thanksLine {
+  margin-top: 12px;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+}
+
+.card a:not([target]) {
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}

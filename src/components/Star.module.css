@@ -1,0 +1,37 @@
+/* Outer span pops the star in once; inner img spins with scroll. Split so the
+   pop-in transition never smooths (and lags) the scroll-driven rotation. */
+.pop {
+  position: absolute;
+  z-index: 0;
+  width: var(--size);
+  pointer-events: none;
+  opacity: 0;
+  transform: scale(0.2) rotate(-60deg);
+  transition:
+    opacity 0.4s ease-out var(--delay),
+    transform 0.7s cubic-bezier(0.34, 1.7, 0.64, 1) var(--delay);
+}
+
+.visible {
+  opacity: 1;
+  transform: none;
+}
+
+.spin {
+  width: 100%;
+  height: auto;
+  transform: rotate(calc(var(--scroll-y, 0) * var(--spin) * 1deg));
+}
+
+@media (max-width: 760px) {
+  .desktopOnly {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pop {
+    opacity: 1;
+    transform: none;
+  }
+}

@@ -1,0 +1,41 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.greeting {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 2.25rem;
+  color: var(--darkgreen);
+}
+
+.link {
+  align-self: flex-start;
+  font-weight: 800;
+  color: var(--darkgreen);
+}
+
+.credentials {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.credentials h3 {
+  font-size: 1.35rem;
+}
+
+@media (max-width: 760px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
