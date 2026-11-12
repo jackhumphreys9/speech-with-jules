@@ -80,8 +80,7 @@ export const slidingScaleDetails = [
   "All payment options are offered at a first-come, first-served basis. Financial status " +
     "determination is based on honor system/self-report. The whole point of offering sliding " +
     "scale services means that the people who pay a higher amount are helping to subsidize the " +
-    "care for families who may not be able to pay as much (80% of the families I see at my " +
-    "current job are covered by Medicaid and have $0 co-pays!). If there is a tier that you'd " +
+    "care for families who may not be able to pay as much. If there is a tier that you'd " +
     "like to pay at but is not available, I will be holding waitlists of 3 families max per tier " +
     "in line for that spot, should a family choose to move up or down in a tier or no longer need " +
     "services. You may be offered a higher tier until a lower one opens up. If you are able to " +
